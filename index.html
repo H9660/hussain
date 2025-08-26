@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hussain — Personal Profile</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--glass: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial; margin:0; background:linear-gradient(180deg,#071029 0%, #07192f 100%); color:#e6eef6; -webkit-font-smoothing:antialiased}
+
+    .wrap{max-width:920px;margin:48px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.7);display:grid;grid-template-columns:220px 1fr;gap:24px}
+
+    /* left column */
+    .photo-card{background:var(--card);padding:18px;border-radius:12px;display:flex;flex-direction:column;align-items:center;gap:14px}
+    .photo{width:160px;height:160px;border-radius:12px;overflow:hidden;flex-shrink:0;border:2px solid rgba(255,255,255,0.06)}
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{font-size:20px;margin:0}
+    .role{font-size:13px;color:var(--muted);margin-top:4px}
+    .contact{width:100%;display:flex;flex-direction:column;gap:8px;margin-top:8px}
+    .contact a{color:var(--accent);text-decoration:none;font-size:13px}
+
+    /* right column */
+    .content{padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border-radius:12px}
+    .section{margin-bottom:18px}
+    .section h2{font-size:14px;margin:0 0 8px 0;color:#dff9ff}
+    p{margin:0;color:#cfe7f2;line-height:1.5}
+    ul{margin:6px 0 0 18px}
+    li{margin-bottom:6px;color:#cde7ef}
+
+    /* responsive */
+    @media (max-width:780px){
+      .wrap{grid-template-columns:1fr;padding:18px}
+      .photo{width:120px;height:120px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <aside class="photo-card">
+      <div class="photo">
+        <!-- replace the src with your own image -->
+        <img src="photo.jpg" alt="Profile Photo">
+      </div>
+      <div style="text-align:center">
+        <h1>Hussain</h1>
+        <div class="role">Student • IIIT Hyderabad</div>
+      </div>
+
+      <div class="contact">
+        <a href="mailto:lohahussain0@gmail.com" target="_blank">Email: lohahussain0@gmail.com</a>
+        <a href="https://github.com/H9660?tab=repositories" target="_blank">Portfolio / GitHub</a>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div class="section">
+        <h2>About me</h2>
+        <p>I'm a curious student at IIIT Hyderabad interested in web development, machine learning, and building useful projects. I enjoy turning ideas into small, useful apps and learning by doing. I like clean UI, practical algorithms, and strong, readable code.</p>
+      </div>
+<hr class="opacity-0.5">
+      <div class="section">
+        <br>
+        <h2>Education</h2>
+        <p><strong>IIIT Hyderabad</strong> — MTech. CSE (ongoing)</p>
+        <ul>
+          <li>Courses: DSA, SSD, AOS, Probablity and Statistics</li>
+          <li>Special Interests :Data Strctures and  Algorithms</li>
+        </ul>
+      </div>
+<hr>
+<br>
+      <div class="section">
+        <h2>Projects & Interests</h2>
+        <ul>
+          <li>Scents: Online perfume store (React / Node)</li>
+          <li>OrangeCode: Web app similar to leetcode so solve DSA problems</li>
+          <li>Worlde: A fun word guessing game.</li>
+        </ul>
+      </div>
+    <hr>
+    <div class="section">
+        <br>
+        <h2>Experience</h2>
+        <p><strong>FourKites</strong> — Chennai, India<br>
+            <em>Software Engineer Intern</em> | June 2023 – May 2024
+        </p>
+        <ul>
+            <li>Rail Tracking Optimization: Resolved 50+ tickets and P2 bugs, improving data accuracy for top 30 customers
+                and saving $30,000/year.</li>
+            <li>Testing and Code Coverage: Increased automated test coverage from 33% to 70.3% using Selenium and Virtuoso;
+                reduced runtime from 1 hour to 15 minutes.</li>
+            <li>Process Compliance: Followed Agile sprint workflows, documentation standards, and risk-aware coding
+                practices in a client-facing product.</li>
+        </ul>
+    </div>
+<HR>
+    <br>
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Languages:</strong> Java, Python, JavaScript, C++</li>
+            <li><strong>Databases:</strong> MySQL, MongoDB</li>
+            <li><strong>Technologies:</strong> ReactJS, NodeJS, NextJS, AWS</li>
+            <li><strong>Testing & Automation:</strong> Selenium, Virtuoso, JUnit, PyTest</li>
+            <li><strong>DevOps Tools:</strong> Jenkins, Docker, Git (GitHub/GitLab)</li>
+        </ul>
+    </div>
+
+    </section>
+  </main>
+</body>
+</html>
