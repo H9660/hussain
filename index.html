@@ -11,7 +11,6 @@
 
     .wrap{max-width:920px;margin:48px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.7);display:grid;grid-template-columns:220px 1fr;gap:24px}
 
-    /* left column */
     .photo-card{background:var(--card);padding:18px;border-radius:12px;display:flex;flex-direction:column;align-items:center;gap:14px}
     .photo{width:160px;height:160px;border-radius:12px;overflow:hidden;flex-shrink:0;border:2px solid rgba(255,255,255,0.06)}
     .photo img{width:100%;height:100%;object-fit:cover;display:block}
@@ -20,7 +19,6 @@
     .contact{width:100%;display:flex;flex-direction:column;gap:8px;margin-top:8px}
     .contact a{color:var(--accent);text-decoration:none;font-size:13px}
 
-    /* right column */
     .content{padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border-radius:12px}
     .section{margin-bottom:18px}
     .section h2{font-size:14px;margin:0 0 8px 0;color:#dff9ff}
@@ -28,7 +26,6 @@
     ul{margin:6px 0 0 18px}
     li{margin-bottom:6px;color:#cde7ef}
 
-    /* responsive */
     @media (max-width:780px){
       .wrap{grid-template-columns:1fr;padding:18px}
       .photo{width:120px;height:120px}
@@ -39,7 +36,6 @@
   <main class="wrap">
     <aside class="photo-card">
       <div class="photo">
-        <!-- replace the src with your own image -->
         <img src="photo.jpg" alt="Profile Photo">
       </div>
       <div style="text-align:center">
